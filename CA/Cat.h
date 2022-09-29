@@ -7,8 +7,4 @@ class Cat : public Mamma {
 public:
 
 	Cat(std::string name) : Mamma(name) {};
-
-	~Cat() {
-		id--;
-	}
 };

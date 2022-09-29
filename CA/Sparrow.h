@@ -7,8 +7,4 @@ class Sparrow : public Birds {
 public:
 
 	Sparrow(std::string name) : Birds(name) {};
-
-	~Sparrow() {
-		id--;
-	}
 };

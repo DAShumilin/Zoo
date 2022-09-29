@@ -8,10 +8,6 @@ public:
 
 	Birds(std::string name) : Animal(name) {};
 
-	~Birds() {
-		id--;
-	}
-
 	void sound() {
 		std::cout << "Kar - Kar" << std::endl;
 	}
