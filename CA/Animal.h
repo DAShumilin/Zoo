@@ -6,7 +6,8 @@ class Animal {
 public:
 
 	int static id;
-	int idAnimal = 0;
+	int static idAnimalUn;
+	int idAnimal;
 	std::string name;
 	Animal() {
 		id++;
@@ -14,7 +15,8 @@ public:
 
 	Animal(std::string name) {
 		id++;
-		idAnimal = id;
+		idAnimal = idAnimalUn;
+		++idAnimalUn;
 		this->name = name;
 	}
 

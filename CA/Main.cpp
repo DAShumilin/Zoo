@@ -12,22 +12,18 @@
 #include "Zoo.h"
 
 int Animal::id = 0;
+int Animal::idAnimalUn = 1;
 
 int main(){
     
-    Cat* cat1 = new Cat("1");
-    Cat* cat2 = new Cat("2");
+    Cat* cat1 = new Cat("...");
+    Cat* cat2 = new Cat("...");
     cat1->printIdAnimal();
     cat2->printIdAnimal();
-    delete cat2;
-    Cat* cat3 = new Cat("3");
-    cat1->printIdAnimal();
-    cat3->printIdAnimal();
     delete cat1;
-    delete cat3;
-    Cat* cat4 = new Cat("4");
-    cat4->printIdAnimal();
-    delete cat4;
+    Cat* cat3 = new Cat("...");
+    cat2->printIdAnimal();
+    cat3->printIdAnimal();
 
     return 0;
 }
